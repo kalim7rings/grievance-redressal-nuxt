@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url('../fonts/TitilliumWeb-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/TitilliumWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/TitilliumWeb-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/TitilliumWeb-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'TitilliumWeb-Light';
+    src: url('../fonts/TitilliumWeb-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/TitilliumWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/TitilliumWeb-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/TitilliumWeb-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'titillium-web-regular';
+    src: url('../fonts/titillium-web-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/titillium-web-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/titillium-web-regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/titillium-web-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/titillium-web-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 20px;
+    color: #00334e;
+    font-family: "titillium-web-regular",sans-serif;
+}
+.btn, .btn-default, .form-submit {
+    background: none repeat scroll 0 0 #e22323;
+    background-image: linear-gradient(to left,#ff0404,#e22323);
+    border: 0 none;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    font-family: "Titillium Web",sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin: 10px 13px 10px 0;
+    min-width: 110px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s linear 0s;
+}
+
+.btn:hover {
+    color: #fff;
+}
+.clearfix {
+    clear: both;
+    display: block;
+}
+.header {
+    padding: 30px 0 30px 6%;
+}
+.logo {
+    width: auto;
+    display: inline-block;
+}
+.otp-category-button {
+    padding: 30px 0 0;
+}
+.rounded-croner {
+    background: none;
+    border: 2px solid #00334e;
+    color: #00334e;
+    padding: 8px 20px;
+}
+.rounded-croner:hover {
+    color: #00334e;
+}
+.hdfc-grievance-wrapper.two-column {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content {
+    justify-content: flex-end;
+    display: flex;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .right-column {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 60px;
+    width: 70%;
+    background-image: url(../images/chat-shape.png);
+    background-repeat: no-repeat;
+    background-position: right 55%;
+    background-size: 8%;
+}
+
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .right-column .grievance-breadcrumbs .breadcrumb {
+    padding: 20px 0;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .right-column .grievance-breadcrumbs .breadcrumb li {
+    display: inline-block;
+    float: left;
+    font-size: .667em;
+    font-weight: 600;
+    list-style-type: none;
+    position: relative;
+    text-transform: uppercase;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .right-column .grievance-breadcrumbs .breadcrumb li:first-child {
+    font-weight: 400;
+    padding-left: 0;
+}
+
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .right-column .grievance-breadcrumbs .breadcrumb li+li:before {
+    padding: 0 5px;
+    content: "\e258";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #00334e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .hdfc-grievance-title h1 {
+    clear: both;
+    color: #00334e;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 1.2;
+    max-width: 100%;
+    text-align: left;
+    width: auto;
+    font-weight: 600;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading {
+    padding: 0;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading .panel-title a {
+    font-size: 22px;
+    background-color: #f2f2f2;
+    color: #00334e;
+    display: block;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.1;
+    padding: 30px 50px;
+    text-align: left;
+    text-decoration: none;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading .panel-title a:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+}
+
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading .panel-title a:before {
+    content: "\f067";
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading .panel-title a[aria-expanded="true"]:before {
+    content: "\f068";
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading {
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    text-align: left;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.hdfc-grievance-footer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0 30px;
+}
+.hdfc-grievance-footer .contact-info {
+    float: left;
+}
+.hdfc-grievance-footer .hdfc-grievance-copyright p {
+    font-size: 15px;
+}
+.contact-info .socialConnect-block a {
+    display: inline-block;
+    width: 57px;
+    padding: 0 0 0 40px;
+    color: #00334e;
+    opacity: .2;
+}
+.contact-info .socialConnect-block a.fb {
+    width: 49px;
+}
+.contact-info .socialConnect-block a.youTube {
+    width: 61px;
+}
+.hdfc-grievance-footer .hdfc-grievance-copyright {
+    float: right;
+}
+.hdfc-grievance-footer .hdfc-grievance-copyright p {
+    font-size: 14px;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content {
+    width: 95%;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-body {
+    padding: 35px 0 20px 40px;
+}
+#write-to-us #user-input .loan-type .form-item-product-type.radio {
+    margin-right: -4px;
+    display: inline-block;
+    padding-right: 0;
+    width: auto;
+}
+#write-to-us #user-input .form-item {
+    padding-left: 0;
+}
+#write-to-us #user-input #selected-component-category {
+    padding-bottom: 15px;
+}
+/*#write-to-us .form-item label {*/
+#write-to-us .form-item .control-label {
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 0.8;
+    display: block;
+    margin: 30px 65px 0 0;
+}
+#write-to-us .form-item {
+    padding: 0;
+}
+#write-a-complaint .write-a-query {
+    clear: both;
+    padding-right: 15px;
+    padding-left: 0;
+    overflow: hidden;
+}
+.submit-for-otp {
+    margin-top: 25px;
+}
+.form-item.form-type-checkbox label:before {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #e7e7e7;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 2.4em #fefefe, 0 0 0 0.1em #a9aaa9;
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2px;
+    transition: .2s;
+    vertical-align: middle;
+    width: 15px;
+}
+/*#write-to-us .form-item.form-type-checkbox label.checked:after {*/
+
+.form-type-checkbox label.checked:after {
+    background: none;
+    border: solid #e22323;
+    border-width: 0 .15em .21em 0;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    left: 10px;
+    margin-left: 0;
+    position: absolute;
+    top: -5px;
+    transform: rotate(45deg);
+    width: 6px;
+}
+#write-a-complaint .home-loan-account label, #write-a-complaint .home-loan-Name label {
+    margin-top: 0;
+}
+#write-to-us .form-item input,#write-to-us .form-item textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #c9c9c9;
+    /*width: 100%;*/
+    box-shadow: none;
+    color: #000;
+    font-size: 1.22em;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0 25px 0 0;
+    display: inline-block;
+    float: none;
+    max-width: inherit;
+    vertical-align: top;
+}
+
+.form-radio{
+    width: 0 !important;
+}
+
+#write-to-us .half-width {
+    display: inline-block;
+    margin: 0 65px 25px 0;
+    max-width: 313px;
+    vertical-align: top;
+    width: 48%;
+}
+#write-to-us .form-item .input-group {
+    width: 100%;
+}
+#write-to-us .form-item .input-group .select-wrapper select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    box-shadow: none;
+    color: #000;
+    font-size: 1.22em;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0 25px 0 0;
+    width: 100%;
+    opacity: .4;
+}
+#write-to-us #user-input .loan-type .form-item:first-child label {
+    border-radius: 5px 0 0 5px;
+}
+#write-to-us #user-input .loan-type .form-item:nth-child(2) label {
+    border-radius: 0 5px 5px 0;
+}
+#write-to-us #user-input .loan-type .form-item label {
+    display: block;
+    overflow: hidden;
+    margin: 5px 0 0;
+    background-color: #ebebeb;
+    font-size: 1.20em;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 200px;
+    opacity: .7;
+    padding: 7px 30px;
+}
+#write-to-us #user-input .loan-type .form-item-product-type.radio:first-child label.checked {
+    border-radius: 5px 0 0 5px;
+}
+#write-to-us #user-input .loan-type .form-item-product-type.radio label.checked {
+    background-color: #e22323;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+}
+#write-to-us .form-item .control-label input {
+    left: -5000px;
+    padding: 0;
+}
+div .form-item.form-type-radio input[type="radio"]:checked, .modal div .form-item.form-type-radio input[type="radio"]:checked, .block div .form-item.form-type-radio input[type="radio"]:checked {
+    background: #c62828;
+    box-shadow: inset 0 0 0 4px #fefefe, 0 0 0 0.1em;
+    opacity: 1;
+}
+div .form-item.form-type-radio input[type="radio"], .modal div .form-item.form-type-radio input[type="radio"], .block div .form-item.form-type-radio input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 0.4em #fefefe, 0 0 0 0.1em #a9aaa9;
+    color: #c62828;
+    cursor: pointer;
+    margin: 1.5px 0 0 -28px;
+    padding: 0;
+    /*width: 17px;
+    height: 17px;*/
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page {
+    text-align: center;
+    padding: 60px 0;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .middle-content-title {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .middle-content-para {
+    font-size: 22px;
+    width: 70%;
+    margin: auto;
+    line-height: 30px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content button {
+    font-size: 12px;
+    font-weight: 700;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info .socialConnect-block a:first-child {
+    padding-left: 0;
+    width: 16px;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info {
+    margin-top: 70px;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info label {
+    font-weight: 300;
+    opacity: 0.9;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info .socialConnect-block a{
+    opacity: 1;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info .socialConnect-block .linkedin {
+    color: #0077b5;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info .socialConnect-block .twtr {
+    color: #1da1f2;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info .socialConnect-block .youTube {
+    color: #f00;
+}
+.hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info .socialConnect-block .fb {
+    color: #3b5998;
+}
+
+.red-color {
+    color: red;
+    text-shadow: none;
+    font-weight: 500;
+    font-family: "Titillium Web", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    display: block;
+}
+
+.red-color::first-letter{
+    text-transform: capitalize;
+}
+
+/* font sizes */
+
+.fs-65{
+    font-size: 65px;
+}
+
+
+
+/*----- ---------------------------------------------- */
+
+@media only screen and (max-width: 991px) {
+    .hdfc-grievance-wrapper.two-column .grievance-middle-content .right-column {
+        width: 100%;
+        padding: 10px 20px;
+        background-image: none;
+    }
+    .header {
+        padding: 10px 0 10px 3%;
+    }
+    #write-to-us .form-item {
+        padding: 0;
+    }
+    .hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-body {
+        padding: 20px 0 20px 20px;
+    }
+    .hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-content .panel-group .panel-heading .panel-title a {
+        font-size: 18px;
+        padding: 16px 20px;
+    }
+    #write-a-complaint .home-loan-account label {
+        margin-top: 0;
+    }
+    #write-a-complaint .home-loan-Name label {
+        margin-top: 15px;
+    }
+    /*#write-to-us .form-item label {*/
+    #write-to-us .form-item .control-label {
+        margin: 30px 0 0 0;
+    }
+    .submit-for-otp, .btn, .btn-default, .form-submit {
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 9px 16px;
+        display: inline-block;
+        margin-right: 3px;
+    }
+    .rounded-croner {
+        padding: 8px 12px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .middle-content-title {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+    .hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .middle-content-para {
+        font-size: 19px;
+        width: 90%;
+        line-height: 27px;
+        opacity: 0.9;
+    }
+    .hdfc-grievance-wrapper.two-column .grievance-middle-content .hdfc-grievance-thank-page .thank-page-middle-content .contact-info {
+        margin-top: 40px;
+    }
+    #write-to-us #user-input .loan-type .form-item label {
+        padding: 5px 13px;
+    }
+    .header .logo img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hdfc-grievance-footer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0 30px;
+        text-align: center;
+    }
+    .hdfc-grievance-footer .contact-info {
+        float: none;
+        display: block;
+        padding: 10px 0 20px;
+    }
+    .hdfc-grievance-footer .contact-info .socialConnect-block a:first-child {
+        padding: 0;
+        width: 20px;
+    }
+    .hdfc-grievance-footer .hdfc-grievance-copyright {
+        float: none;
+    }
+}

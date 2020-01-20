@@ -1,0 +1,2 @@
+collect = require('collect.js');
+
